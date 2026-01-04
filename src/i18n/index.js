@@ -1,22 +1,27 @@
 import en from "./en.json";
 import es from "./es.json";
 
-export const dict = { en, es };
+const translations = { en, es };
 
-/**
- * t(lang, "assistant.hello", { section: "Projects" })
- */
-export function t(lang, key, vars = {}) {
-  const data = dict[lang] ?? dict.en;
+export function t(lang, key, vars) {
+  const dict = translations[lang] ?? translations.en;
 
-  const value = key
-    .split(".")
-    .reduce((acc, part) => (acc && acc[part] != null ? acc[part] : null), data);
+  // Soporta paths tipo "projects.featured.title"
+  const parts = key.split(".");
+  let value = dict;
 
-  if (typeof value !== "string") return key; // fallback si no existe
+  for (const part of parts) {
+    value = value?.[part];
+    if (value === undefined) break;
+  }
 
-  
-  return value.replace(/\{\{(\w+)\}\}/g, (_, name) => {
-    return vars[name] ?? `{{${name}}}`;
-  });
+  if (value === undefined) return key;
+
+  if (typeof value === "string" && vars) {
+    for (const [k, v] of Object.entries(vars)) {
+      value = value.replaceAll(`{${k}}`, String(v));
+    }
+  }
+
+  return value;
 }

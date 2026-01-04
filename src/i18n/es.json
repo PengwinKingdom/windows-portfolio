@@ -36,5 +36,58 @@
     "about": "Sobre Mí",
     "how": "Cómo Trabajo",
     "contact": "Contacto"
-  }
+  },
+
+  "projects": {
+    "learnedTitle": "Lo que aprendí",
+    "link": "Enlace",
+    "featured": [
+      {
+        "id": "penguin",
+        "title": "Clasificador de Especies de Pingüinos",
+        "tags": ["Machine Learning", "Backend", "Aplicación Web"],
+        "description": "Esta aplicación web clasifica especies de pingüinos a partir de imágenes usando un modelo de deep learning entrenado con transfer learning.",
+        "learned": 
+        [
+          "Entrenamiento y fine-tuning de modelos CNN con MobileNetV2",
+          "Preprocesamiento y normalización de imágenes",
+          "Integración de modelos de ML en una app web con Flask",
+          "Estructurar el proyecto para facilitar mantenimiento"
+        ],
+        "image": "/projects/PenguinClassifier.png",
+        "link": "https://penguin-classifier-lmo1.onrender.com/"
+      },
+      
+      {
+        "id": "todolist",
+        "title": "Aplicación de Lista de Tareas",
+        "tags": ["React", "Frontend", "UX"],
+        "description": "Organizador de tareas con prioridades, seguimiento de progreso y persistencia con localStorage.",
+        "learned": 
+        [
+          "Manejo de estado y componentes reutilizables",
+          "Construcción de interfaces responsivas",
+          "Persistencia de datos usando localStorage"
+        ],
+        "image": "/projects/ToDoList.png",
+        "link": "https://task-planner-pengwin.vercel.app/"
+      },
+      
+      {
+        "id": "marketlink",
+        "title": "MarketLink (Full Stack)",
+        "tags": ["Flask", "MongoDB", "Docker"],
+        "description": "API REST con CRUD de usuarios conectada a MongoDB y ejecutada con Docker Compose.",
+        "learned": 
+        [
+          "Diseño de endpoints REST en Flask",
+          "Operaciones CRUD con MongoDB usando PyMongo",
+          "Uso de Docker Compose para desarrollo local"
+        ],
+        "image": "/projects/MerketLink.png",
+        "link": "https://github.com/PengwinKingdom/Penguin-Classifier"
+      }
+  ]
+}
+
 }

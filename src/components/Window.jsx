@@ -70,7 +70,9 @@ export default function Window({id,title,zIndex,onClose,onFocus,children,positio
                 
             </div>
             
-            <div className="window-body">{children}</div>
+            <div className="window-body">
+                {children}
+            </div>
         
         </div>
 

@@ -36,5 +36,56 @@
     "about": "About Me",
     "how": "How I Work",
     "contact": "Contact"
+  },
+
+  "projects": {
+    "learnedTitle": "What I learned",
+    "link": "Link",
+    "featured": [
+
+      {
+        "id": "penguin",
+        "title": "Penguin Species Classifier",
+        "tags": ["Machine Learning", "Backend", "Web App"],
+        "description": "This web application classifies penguin species from images using a deep learning model trained with transfer learning.",
+        "learned": [
+        "Training and fine-tuning CNN models with MobileNetV2",
+        "Image preprocessing and normalization",
+        "Integrating ML models into a Flask web app",
+        "Structuring a project for maintainability"
+        ],
+        "image": "/projects/PenguinClassifier.png",
+        "link": "https://penguin-classifier-lmo1.onrender.com/"
+      },
+
+      {
+        "id": "todolist",
+        "title": "To Do List App",
+        "tags": ["React", "Frontend", "UX"],
+        "description": "Task planner with priorities, progress tracking, and localStorage persistence.",
+        "learned": [
+          "State management and reusable components",
+          "Building responsive UI layouts",
+          "Persisting data with localStorage"
+        ],
+        "image": "/projects/ToDoList.png",
+        "link": "https://task-planner-pengwin.vercel.app/"
+      },
+
+      {
+       "id": "marketlink",
+        "title": "MarketLink (Full Stack)",
+        "tags": ["Flask", "MongoDB", "Docker"],
+        "description": "REST API for user CRUD connected to MongoDB, running with Docker Compose.",
+        "learned": [
+          "Designing REST endpoints in Flask",
+          "CRUD operations with MongoDB via PyMongo",
+          "Using Docker Compose for local development"
+        ],
+        "image": "/projects/MerketLink.png", 
+        "link": "https://github.com/PengwinKingdom/Penguin-Classifier"
+      }
+      
+    ]
   }
 }

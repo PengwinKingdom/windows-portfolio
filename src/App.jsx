@@ -208,7 +208,15 @@ const activeWindowId = openWindows.length
           position={positions[id]}
           onMove={(pos)=>setPositions((prev)=>({...prev,[id]:pos}))}
           >
-            {s.content.body}
+            {s.content.type === "component" && (
+              <s.content.component lang={lang} />
+              )}
+              
+              {s.content.type === "text" && (
+                <div style={{ padding: 16, whiteSpace: "pre-line" }}>
+                  {s.content.body}
+                </div>
+              )}
           </Window>
         );
       })}

@@ -1,3 +1,5 @@
+import ProjectsPage from "../pages/ProjectsPage";
+
 export const sections=[
     {
         id:"projects",
@@ -5,9 +7,8 @@ export const sections=[
         iconPath: "icons/projectDemo.png",
         assistantDialog:"Want to see how I build them?",
         content:{
-            type:"text",
-            body:
-            "Featured projects will go here.\n\nInclude: problem → solution → tech stack → links.",
+            type: "component",
+            component: ProjectsPage,
         },
     },
 
