@@ -1,0 +1,40 @@
+{
+  "assistant": {
+    "hello": "Hello :D\n\nWhat do you want to explore?",
+    "explore": "What do you want to explore?",
+    "viewing": "You're now viewing {{section}}",
+    "next": "Next: {{section}}",
+    "back": "Back to Main Menu"
+  },
+
+  "sections": {
+    "projects": {
+      "title": "Projects",
+      "content": "Featured projects will go here.\nInclude: problem → solution → tech stack → links."
+    },
+    "skills": {
+      "title": "Skills",
+      "content": "Technical and soft skills will be listed here."
+    },
+    "about": {
+      "title": "About Me",
+      "content": "A brief bio will go here.\nBackground, interests, goals."
+    },
+    "how": {
+      "title": "How I Work",
+      "content": "My workflow, mindset and collaboration style."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Ways to get in touch with me."
+    }
+  },
+
+  "taskbar": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About Me",
+    "how": "How I Work",
+    "contact": "Contact"
+  }
+}

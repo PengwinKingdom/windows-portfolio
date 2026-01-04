@@ -1,0 +1,40 @@
+{
+  "assistant": {
+    "hello": "Hola :D\n\n¿Qué te gustaría explorar?",
+    "explore": "¿Qué te gustaría explorar?",
+    "viewing": "Estás viendo {{section}}",
+    "next": "Siguiente: {{section}}",
+    "back": "Volver al Menú Principal"
+  },
+
+  "sections": {
+    "projects": {
+      "title": "Proyectos",
+      "content": "Aquí irán los proyectos destacados.\nIncluye: problema → solución → tecnologías → enlaces."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "content": "Aquí se listarán habilidades técnicas y blandas."
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "content": "Aquí irá una breve biografía.\nExperiencia, intereses y objetivos."
+    },
+    "how": {
+      "title": "Cómo Trabajo",
+      "content": "Mi forma de trabajar, mentalidad y colaboración."
+    },
+    "contact": {
+      "title": "Contacto",
+      "content": "Formas de contactarme."
+    }
+  },
+
+  "taskbar": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Sobre Mí",
+    "how": "Cómo Trabajo",
+    "contact": "Contacto"
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.4;
+
+  --taskbar-height: 44px;
+  --assistant-gap: 12px;
+
+  color-scheme: only light;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+:focus-visible {
+  outline: 2px solid rgba(120, 160, 255, 0.9);
+  outline-offset: 4px;
+  border-radius: 8px; 
+}
