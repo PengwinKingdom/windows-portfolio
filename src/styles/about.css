@@ -1,0 +1,124 @@
+.about-page {
+  color: #000;
+}
+
+.about-top {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.about-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+}
+
+.about-top-text {
+  min-width: 0;
+}
+
+.about-name {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.about-tagline {
+  margin-top: 6px;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.about-intro {
+  margin-top: 10px;
+  max-width: 680px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.about-divider {
+  height: 1px;
+  background: #e6e6e6;
+  margin: 18px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.about-card {
+  background: #d3efe2;
+  border: 1px solid #2f7d55;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.about-card-title {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.about-list li {
+  margin: 6px 0;
+}
+
+@media (max-width: 900px) {
+  .about-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-name {
+    font-size: 28px;
+  }
+}
+
+.edu-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edu-degree {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.edu-school {
+  opacity: 0.9;
+}
+
+.edu-period {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.work-header {
+  margin-bottom: 10px;
+}
+
+.work-role {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.work-meta {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-top: 4px;
+}

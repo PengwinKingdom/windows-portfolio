@@ -76,7 +76,7 @@ export default function Assistant({ message, actions, onAction }) {
 
       <img
         className="assistant-avatar"
-        src="/assistant/dog.webp"
+        src="/assistant/avatar1.png"
         alt="Assistant avatar"
       />
     </div>

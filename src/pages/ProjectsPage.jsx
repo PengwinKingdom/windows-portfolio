@@ -46,6 +46,9 @@ export default function ProjectsPage({ lang }) {
           ))}
         </div>
 
+        {/* DIVIDER */}
+        <div className="projects-divider" />
+
         {/* RIGHT: details */}
         <div className="project-details">
           <h2 className="project-title">{active.title}</h2>

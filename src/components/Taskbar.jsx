@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { playClick } from "../sfx";
 import "../styles/taskbar.css";
 
 export default function Taskbar({
@@ -76,7 +77,10 @@ export default function Taskbar({
                     <button
                     type="button"
                     className="lang-btn"
-                    onClick={() => setLangOpen((v) => !v)}
+                    onClick={() => {
+                        playClick();
+                        setLangOpen((v) => !v)
+                    }}
                     aria-haspopup="menu"
                     aria-expanded={langOpen}>
                         {lang?.toUpperCase?.() ?? "EN"} <span className="caret">▾</span>
@@ -87,7 +91,9 @@ export default function Taskbar({
                             <button
                             type="button"
                             className={`lang-item ${lang === "en" ? "selected" : ""}`}
-                            onClick={() => chooseLang("en")}
+                            onClick={() => {
+                                chooseLang("en");
+                            }}
                             role="menuitem">
                                 English (EN)
                             </button>
@@ -95,7 +101,9 @@ export default function Taskbar({
                             <button
                             type="button"
                             className={`lang-item ${lang === "es" ? "selected" : ""}`}
-                            onClick={() => chooseLang("es")}
+                            onClick={() => {
+                                chooseLang("es");
+                            }}
                             role="menuitem">
                                 Español (ES)
                             </button>
@@ -104,7 +112,7 @@ export default function Taskbar({
                 </div>
                 <img className="tray-img" src="/tray/wifi.png" alt="Wi-Fi" />
                 <img className="tray-img" src="/tray/volume.png" alt="Volume" />
-                <img className="tray-img" src="/tray/batery.webp" alt="Battery" />
+                <img className="tray-img" src="/tray/battery.png" alt="Battery" />
             </div>
 
             <div className="taskbar-right">

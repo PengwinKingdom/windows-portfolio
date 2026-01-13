@@ -87,6 +87,24 @@ function App() {
   const [lang,setLang]=useState("en");
   const assistantFlow = useMemo(() => buildAssistantFlow(lang), [lang]);
 
+
+  const getAssistantForSection = (sectionId, lang) => {
+  const s = sectionsById.get(sectionId);
+  const flow = assistantFlow[sectionId];
+
+
+  const dialog =
+    (s?.assistantDialogKey && t(lang, s.assistantDialogKey)) ||
+    s?.assistantDialog ||
+    flow?.message ||
+    "";
+
+  return {
+    message: dialog,
+    actions: flow?.actions ?? [{ id: "menu", label: t(lang, "assistant.back") }],
+  };
+};
+
   /**
    * 
    */
@@ -106,8 +124,7 @@ function App() {
       return { ...prev, [id]: DEFAULT_POSITIONS[id] ?? { x: 120, y: 80 } };
     });
     
-    const flow = assistantFlow[id];
-    if (flow) setAssistant(flow);
+    setAssistant(getAssistantForSection(id, lang));
   };
 
 
@@ -125,13 +142,8 @@ function App() {
     }
     
     const top=next[next.length-1];
-    const flow=assistantFlow[top];
-
-    if(flow){
-      setAssistant({
-        message:flow.message,
-        actions:flow.actions});
-    }
+    
+    setAssistant(getAssistantForSection(top, lang));
 
     return next;
     });
@@ -146,14 +158,8 @@ const focusWindow = (id) => {
     return [...next, id];
   });
 
-  const flow = assistantFlow[id];
+  setAssistant(getAssistantForSection(id, lang));
 
-  if(flow){
-    setAssistant({
-      message:flow.message,
-      actions:flow.actions
-    });
-  }
 };
 
 const handleAssistantAction = (id) => {

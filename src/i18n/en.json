@@ -10,23 +10,23 @@
   "sections": {
     "projects": {
       "title": "Projects",
-      "content": "Featured projects will go here.\nInclude: problem → solution → tech stack → links."
+      "assistantDialog": "Want to see how I build them?"
     },
     "skills": {
       "title": "Skills",
-      "content": "Technical and soft skills will be listed here."
+      "assistantDialog": "Curious about my tech stack?"
     },
     "about": {
       "title": "About Me",
-      "content": "A brief bio will go here.\nBackground, interests, goals."
+      "assistantDialog": "Want to know more about me?"
     },
     "how": {
       "title": "How I Work",
-      "content": "My workflow, mindset and collaboration style."
+      "assistantDialog": "Interested in my workflow?"
     },
     "contact": {
       "title": "Contact",
-      "content": "Ways to get in touch with me."
+      "assistantDialog": "Want to get in touch?"
     }
   },
 
@@ -83,9 +83,167 @@
           "Using Docker Compose for local development"
         ],
         "image": "/projects/MerketLink.png", 
-        "link": "https://github.com/PengwinKingdom/Penguin-Classifier"
+        "link": "https://github.com/PengwinKingdom/marketlink-backend.git"
       }
       
     ]
-  }
+  },
+
+  "skills": {
+    "title": "Skills",
+    "cards": 
+    {
+      "frontend": 
+      {
+        "title": "Frontend",
+        "items": [
+          "React (components, hooks, state)",
+          "JavaScript (ES6+, basic async)",
+          "HTML & CSS (responsive layouts)"
+        ]
+      },
+      "backend": 
+      {
+        "title": "Backend",
+        "items": [
+          "Flask (REST APIs)",
+          "MongoDB (CRUD with PyMongo)",
+          "Docker (basic local setup)"
+        ]
+      },
+      "tools": 
+      {
+        "title": "Tools & Workflow",
+        "items": [
+          "Git & GitHub (branches, commits)",
+          "Vite / npm",
+          "Deploy: Render & Vercel",
+          "Debugging with logs and DevTools"
+        ]
+      },
+      "basics": {
+        "title": "Basics / Familiar",
+        "items": [
+           "SQL (basic queries)",
+           "Angular (basic components)",
+          "Excel (basic formulas and tables)"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "name": "Fátima Florez",
+    "intro": "Hi! I'm a Software Engineering student currently focused on Frontend and Backend web development.\n\nI enjoy building practical projects to better understand how real applications work.\n\nMost of my work started as academic projects, but I am now aiming to create my own projects with a real-world structure so I can continue learning.",
+    "education": {
+    "title": "Education",
+    "degree": "Software Engineering",
+    "school": "UPC – Universidad Peruana de Ciencias Aplicadas",
+    "period": "2023 – Present"
+  },
+    "interests": {
+      "title": "Interests",
+      "items": [
+        "Web app development",
+        "UI/UX and usability",
+        "APIs and databases",
+        "Design and visual aesthetics"
+      ]
+    },
+    "work": {
+    "title": "Work Experience",
+    "role": "Customer Support Assistant",
+    "company": "AfterSchoolCenter",
+    "type": "Remote",
+    "items": [
+      "Customer communication and support",
+      "Coordinating with instructors and schedules",
+      "Assisting live sessions using Zoom"
+    ]
+  },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        "Spanish — Native",
+        "English — Intermediate"
+      ]
+    }
+  },
+
+  "how": {
+    "title": "How I Work",
+    "sections": [
+      {
+        "title": "Approach",
+        "items": [
+          "I start by understanding the problem and the goal",
+          "I break problems into smaller tasks",
+          "I focus on functionality first, then improve"
+        ]
+      },
+      
+      {
+        "title": "Learning & Iteration",
+        "items": [
+          "I learn by building real projects",
+          "I iterate based on feedback and discoveries",
+          "I refactor code as I learn better solutions"
+        ]
+      },
+    
+      {
+        "title": "Code & Organization",
+        "items": [
+          "I aim for readable and organized code",
+          "I use clear naming and simple structures",
+          "I think about maintainability"
+        ]
+      },
+    
+      {
+        "title": "Collaboration",
+        "items": [
+          "I communicate clearly",
+          "I ask questions when needed",
+          "I'm open to feedback"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+  "title": "Contact",
+  "links": [
+    {
+      "id": "github",
+      "label": "Github",
+      "href": "https://github.com/PengwinKingdom",
+      "icon": "/contact/github.svg",
+      "newTab": true
+    },
+    {
+      "id": "Linkedin",
+      "label": "Linkedin",
+      "href": "https://www.linkedin.com/in/fatima-belen-florez-shimabukuro-9331422a4",
+      "icon": "/contact/linkedin.png",
+      "newTab": true
+    },
+    {
+      "id": "email",
+      "label": "Gmail",
+      "href": "mailto:fatimabelenflorez@gmail.com",
+      "icon": "/contact/email.png",
+      "newTab": false
+    },
+    {
+      "id": "cv",
+      "label": "CV",
+      "href": "/cv/Ampharaos-CV.pdf",
+      "icon": "/contact/pdfIcon.png",
+      "newTab": true
+    }
+  ]
+}
+
+
 }

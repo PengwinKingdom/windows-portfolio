@@ -9,7 +9,7 @@
   align-items: flex-end;
   gap: 10px;
 
-  --assistant-hover: #3b5bff;
+  --assistant-hover: #e64573;
 }
 
 /* Bubble */
@@ -95,9 +95,10 @@
 
 /* Avatar */
 .assistant-avatar {
-  width: 100px;     
+  width: 147px;     
   height: auto;     
   object-fit: contain;
+  transform: translateY(20px);
 }
 
 

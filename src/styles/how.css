@@ -1,0 +1,49 @@
+.how-page {
+  color: #000;
+}
+
+.how-title {
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.how-card {
+  background: #d3efe2;
+  border: 1px solid #2f7d55;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.how-card-title {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.how-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.how-list li {
+  margin: 6px 0;
+}
+
+@media (max-width: 900px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.how-divider {
+  height: 1px;
+  background: #e6e6e6;
+  margin: 18px 0;
+}

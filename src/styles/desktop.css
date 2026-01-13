@@ -1,3 +1,6 @@
+:root{
+  --taskbar-h: 64px; 
+}
 .desktop {
   height: 100%;
   width: 100%;
@@ -5,20 +8,36 @@
   inset: 0;
   overflow: hidden;
 
-  background-image: url("/wallpapers/screenDemo.webp");
+  background-image: url("/wallpapers/pixelScreen4.1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   padding: 20px;
+
+  background: none;        
+  isolation: isolate;
+}
+
+.desktop::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  bottom: var(--taskbar-height);
+  z-index: -1;
+
+  background-image: url("/wallpapers/pixelScreen4.1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .icons {
   display: grid;
   grid-template-columns: 96px; 
-  grid-auto-rows: 110px;
-  gap: 18px;
-  width: 110px;
+  grid-auto-rows: 100px;
+  gap: 14px;
+  width: 100px;
 }
 
 .desktop-icon {
@@ -26,14 +45,14 @@
   height: 110px;
   border: none;
   background: transparent;
-  color: white;
+  color: black;
   cursor: default;
   user-select: none;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .desktop-icon:focus {
@@ -42,8 +61,8 @@
 }
 
 .desktop-icon__img {
-  width: 54px;
-  height: 54px;
+  width: 80px;
+  height: 80px;
   image-rendering: auto;
 }
 
@@ -52,5 +71,6 @@
   text-align: center;
   line-height: 1.15;
   text-shadow: 0 1px 2px rgba(0,0,0,0.65);
+  line-height: 1.05;
 }
 

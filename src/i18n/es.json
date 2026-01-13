@@ -10,23 +10,23 @@
   "sections": {
     "projects": {
       "title": "Proyectos",
-      "content": "Aquí irán los proyectos destacados.\nIncluye: problema → solución → tecnologías → enlaces."
+      "assistantDialog": "¿Quieres ver cómo los construyo?"
     },
     "skills": {
       "title": "Habilidades",
-      "content": "Aquí se listarán habilidades técnicas y blandas."
+      "assistantDialog": "¿Te da curiosidad mi stack?"
     },
     "about": {
       "title": "Sobre Mí",
-      "content": "Aquí irá una breve biografía.\nExperiencia, intereses y objetivos."
+      "assistantDialog": "¿Quieres conocer más sobre mí?"
     },
     "how": {
       "title": "Cómo Trabajo",
-      "content": "Mi forma de trabajar, mentalidad y colaboración."
+      "assistantDialog": "¿Te interesa saber cómo trabajo?"
     },
     "contact": {
       "title": "Contacto",
-      "content": "Formas de contactarme."
+      "assistantDialog": "¿Quieres ponerte en contacto conmigo?"
     }
   },
 
@@ -85,9 +85,163 @@
           "Uso de Docker Compose para desarrollo local"
         ],
         "image": "/projects/MerketLink.png",
-        "link": "https://github.com/PengwinKingdom/Penguin-Classifier"
+        "link": "https://github.com/PengwinKingdom/marketlink-backend.git"
       }
+    ]
+  },
+
+  "skills": {
+    "title": "Habilidades",
+    "cards": {
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "React (componentes, hooks, estado)",
+          "JavaScript (ES6+, async básico)",
+          "HTML y CSS (diseño responsive)"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "Flask (APIs REST)",
+          "MongoDB (CRUD con PyMongo)",
+          "Docker (configuración básica local)"
+        ]
+      },
+      "tools": {
+        "title": "Herramientas y flujo de trabajo",
+        "items": [
+          "Git y GitHub (ramas, commits)",
+          "Vite / npm",
+          "Deploy: Render y Vercel",
+          "Debugging con logs y DevTools"
+        ]
+      },
+      "basics": {
+        "title": "Básico / Familiar",
+        "items": [
+          "SQL (consultas básicas)",
+          "Angular (componentes básicos)",
+          "Excel (fórmulas y tablas básicas)"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "name": "Fátima Florez",
+    "intro": "¡Hola! Soy estudiante de Ingeniería de Software y actualmente estoy enfocada en el desarrollo web Frontend y Backend.\n\nMe gusta crear proyectos prácticos para entender mejor cómo funcionan las aplicaciones reales.\n\nLa mayoría de mi trabajo comenzó como proyectos académicos, pero actualmente busco desarrollar proyectos propios con una estructura más cercana a un entorno real para seguir aprendiendo.",
+    "education": {
+    "title": "Educación",
+    "degree": "Ingeniería de Software",
+    "school": "UPC – Universidad Peruana de Ciencias Aplicadas",
+    "period": "2023 – Actualidad"
+  },
+    "interests": {
+      "title": "Intereses",
+      "items": [
+        "Desarrollo de aplicaciones web",
+        "UI/UX y usabilidad",
+        "APIs y bases de datos",
+        "Diseño y estética visual"
+      ]
+    },
+    "work": {
+    "title": "Experiencia laboral",
+    "role": "Asistente de atención al cliente",
+    "company": "AfterSchoolCenter",
+    "type": "Remoto",
+    "items": [
+      "Atención y comunicación con clientes",
+      "Coordinación con profesores y horarios",
+      "Apoyo en sesiones virtuales usando Zoom"
+    ]
+  },
+    "languages": {
+      "title": "Idiomas",
+      "items": [
+        "Español — Nativo",
+        "Inglés — Intermedio"
+      ]
+    }
+  },
+
+  "how": {
+    "title": "Cómo trabajo",
+    "sections": [
+      {
+        "title": "Enfoque",
+        "items": [
+          "Empiezo entendiendo el problema y el objetivo",
+          "Divido los problemas en tareas pequeñas",
+          "Primero busco que funcione y luego mejorar"
+        ]
+      },
+      
+      {
+        "title": "Aprendizaje e iteración",
+        "items": [
+          "Aprendo construyendo proyectos reales",
+          "Itero a partir del feedback y lo aprendido",
+          "Refactorizo cuando encuentro mejores soluciones"
+        ]
+      },
+   
+      {
+        "title": "Código y organización",
+        "items": [
+          "Busco código legible y ordenado",
+          "Uso nombres claros y estructuras simples",
+          "Pienso en la mantenibilidad"
+        ]
+      },
+    
+      {
+        "title": "Colaboración",
+        "items": [
+          "Me comunico de forma clara",
+          "Pregunto cuando lo necesito",
+          "Estoy abierta al feedback"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+  "title": "Contacto",
+  "links": [
+    {
+      "id": "github",
+      "label": "Github",
+      "href": "https://github.com/PengwinKingdom",
+      "icon": "/contact/github.svg",
+      "newTab": true
+    },
+    {
+      "id": "Linkedin",
+      "label": "Linkedin",
+      "href": "https://www.linkedin.com/in/fatima-belen-florez-shimabukuro-9331422a4",
+      "icon": "/contact/linkedin.png",
+      "newTab": true
+    },
+    {
+      "id": "gmail",
+      "label": "Gmail",
+      "href": "mailto:fatimabelenflorez@gmail.com",
+      "icon": "/contact/email.png",
+      "newTab": false
+    },
+    {
+      "id": "cv",
+      "label": "CV",
+      "href": "/cv/Ampharaos-CV.pdf",
+      "icon": "/contact/pngIcon.png",
+      "newTab": true
+    }
   ]
 }
+
+
 
 }

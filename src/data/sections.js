@@ -1,11 +1,15 @@
 import ProjectsPage from "../pages/ProjectsPage";
+import SkillsPage from "../pages/SkillsPage";
+import AboutPage from "../pages/AboutPage";
+import HowPage from "../pages/HowPage";
+import ContactPage from "../pages/ContactPage";
 
 export const sections=[
     {
         id:"projects",
         title:"Projects",
-        iconPath: "icons/projectDemo.png",
-        assistantDialog:"Want to see how I build them?",
+        iconPath: "icons/folder.png",
+        assistantDialogKey: "sections.projects.assistantDialog",
         content:{
             type: "component",
             component: ProjectsPage,
@@ -15,48 +19,44 @@ export const sections=[
     {
         id:"skills",
         title:"Skills",
-        iconPath: "icons/skillDemo.png",
-        assistantDialog:"Curious about my tech stack?",
+        iconPath: "icons/goals.png",
+        assistantDialogKey: "sections.skills.assistantDialog",
         content:{
-            type:"text",
-            body:
-            "List of skills will go here.\n\nInclude: languages, frameworks, tools, etc.",
+            type: "component",
+            component: SkillsPage
         },
     },
 
     {
         id:"about",
         title:"About Me",
-        iconPath: "icons/personDemo.png",
-        assistantDialog:"Want to know more about me?",
+        iconPath: "icons/notebook.png",
+        assistantDialogKey: "sections.about.assistantDialog",
         content:{
-            type:"text",
-            body:
-            "A brief bio will go here.\n\nInclude: background, interests, goals, etc.",
+            type: "component",
+            component: AboutPage
         },
     },
 
     {
         id:"how",
         title:"How I Work",
-        iconPath: "icons/howDemo.png",
-        assistantDialog:"Interested in my workflow?",
+        iconPath: "icons/gears.png",
+        assistantDialogKey: "sections.how.assistantDialog",
         content:{
-            type:"text",
-            body:
-            "Description of work process will go here.\n\nInclude: methodologies, tools, communication style, etc.",
+            type: "component",
+            component: HowPage
         },
     },
 
     {
         id:"contact",
         title:"Contact",
-        iconPath: "icons/iconDemo.png",
-        assistantDialog:"Want to get in touch?",
+        iconPath: "icons/gmail.png",
+        assistantDialogKey: "sections.contact.assistantDialog",
         content:{
-            type:"text",
-            body:
-            "Contact information will go here.\n\nInclude: email, social media, etc.",
+            type: "component",
+            component: ContactPage
         },
     },
 ];

@@ -2,14 +2,14 @@
   width: min(980px, 78vw);
   height: min(560px, 72vh);
   background: #fff;
-  border: 2px solid rgba(0,0,0,0.55);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.35);
+  border: 2px solid #2f7d55;
+  box-shadow: 0 14px 35px #61a27d;
   overflow: hidden;
 }
 
 .window-titlebar{
   height: 44px;
-  background: #2b2b2b;
+  background: #61a27d;
   color: #fff;
 
   display: flex;
@@ -43,7 +43,7 @@
   border-radius: 8px;
 
   background: white;
-  color: black;
+  color: #61a27d;
 
   display: flex; 
   align-items: center;
@@ -55,10 +55,6 @@
   cursor: pointer;
 }
 
-.window-close:hover{
-  background: rgba(0,0,0,0.75);
-}
-
 .window-body{
   height: calc(100% - 44px);
   padding: 22px;
@@ -67,6 +63,7 @@
 
 .window-body::-webkit-scrollbar {
   width: 8px;
+  height: 100px;
 }
 
 .window-body::-webkit-scrollbar-track {
@@ -74,10 +71,10 @@
 }
 
 .window-body::-webkit-scrollbar-thumb {
-  background: #000; 
+  background: #82cfab;
   border-radius: 8px;
 }
 
 .window-body::-webkit-scrollbar-thumb:hover {
-  background: #222;
+  background: #61a27d;
 }
