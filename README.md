@@ -1,16 +1,59 @@
-# React + Vite
+# Windows-Style Portfolio (Vite + React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Windows-inspired portfolio website with a desktop UI: draggable windows, a taskbar, and interactive sections (Projects, Skills, About, How I Work, Contact). Includes bilingual support (EN/ES) and a downloadable CV.
 
-Currently, two official plugins are available:
+## Live Demo
+* Website: https://windows-portfolio-beta.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Preview
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
+* Desktop-like UI with windows + taskbar navigation
+* Sections: Projects, Skills, About Me, How I Work, Contact
+* Bilingual (EN / ES) with i18n
+* Mobile-friendly (responsive layout)
+* CV available to download from the Contact section
 
-## Expanding the ESLint configuration
+## Tech Stack
+* React + Vite
+* Custom CSS
+* i18n (JSON)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+```bash
+public/
+  about/
+  assistant/
+  contact/
+  cv/
+  icons/
+  projects/
+  sfx/
+  tray/
+  wallpapers/
+src/
+  components/
+  data/
+  hooks/
+  i18n/
+  pages/
+  styles/
+```
+
+## Run Locally
+```bash
+npm install
+npm run dev
+```
+
+## Build
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+This project is deployed on Vercel using the default Vite settings:
+* Build Command: npm run build
+* Output Directory: bash dist
