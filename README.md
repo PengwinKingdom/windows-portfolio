@@ -6,7 +6,7 @@ A Windows-inspired portfolio website with a desktop UI: draggable windows, a tas
 * Website: https://windows-portfolio-beta.vercel.app/
 
 ## Preview
-
+![Preview](public/preview/preview.png)
 
 ## Features
 * Desktop-like UI with windows + taskbar navigation
