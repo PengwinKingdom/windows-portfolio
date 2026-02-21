@@ -1,5 +1,5 @@
 import DesktopIcon from "./DesktopIcon";
-import "../styles/Desktop.css";
+import "../styles/desktop.css";
 
 export default function Desktop({sections,onOpen}){
     return (
