@@ -3,7 +3,7 @@
 A Windows-inspired portfolio website with a desktop UI: draggable windows, a taskbar, and interactive sections (Projects, Skills, About, How I Work, Contact). Includes bilingual support (EN/ES) and a downloadable CV.
 
 ## Live Demo
-* Website: https://windows-portfolio-beta.vercel.app/
+* Website: https://fatima-florez.vercel.app/
 
 ## Preview
 ![Preview](public/preview/preview.png)
