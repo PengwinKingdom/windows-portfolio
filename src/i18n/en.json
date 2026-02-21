@@ -1,6 +1,7 @@
 {
   "assistant": {
     "hello": "Hello :D\n\nWhat do you want to explore?",
+    "helloMobile": "Hello :D\n\nWhat do you want to explore?",
     "explore": "What do you want to explore?",
     "viewing": "You're now viewing {{section}}",
     "next": "Next: {{section}}",
@@ -84,6 +85,21 @@
         ],
         "image": "/projects/MerketLink.png", 
         "link": "https://github.com/PengwinKingdom/marketlink-backend.git"
+      },
+
+      {
+        "id": "habit-tracker-api",
+        "title": "Habit Tracker API",
+        "tags": ["Backend", "REST API", "FastAPI", "Swagger"],
+        "description": "A REST API to track habits with logs and weekly summaries, built with FastAPI and documented with Swagger.",
+        "learned": [
+        "Designing clean REST endpoints and data models",
+        "Validation with Pydantic schemas",
+        "Database persistence and CRUD operations",
+        "API documentation with Swagger/OpenAPI"
+        ],
+        "image": "/projects/habit-tracker-docs.png",
+        "link": "https://github.com/PengwinKingdom/habit-tracker-api.git"
       }
       
     ]
@@ -134,7 +150,7 @@
 
   "about": {
     "name": "Fátima Florez",
-    "intro": "Hi! I'm a Software Engineering student currently focused on Frontend and Backend web development.\n\nI enjoy building practical projects to better understand how real applications work.\n\nMost of my work started as academic projects, but I am now aiming to create my own projects with a real-world structure so I can continue learning.",
+    "intro": "Hi! I'm a Software Engineering student focused on Frontend and Backend web development.\n\nI like building practical projects, from UI to APIs, to understand how real applications are structured and maintained.\n\nMuch of my work started as academic projects, and I now create personal projects to strengthen my code structure, best practices, and overall workflow.",
     "education": {
     "title": "Education",
     "degree": "Software Engineering",
@@ -230,7 +246,7 @@
     },
     {
       "id": "email",
-      "label": "Gmail",
+      "label": "Email",
       "href": "mailto:fatimabelenflorez@gmail.com",
       "icon": "/contact/email.png",
       "newTab": false
@@ -238,7 +254,7 @@
     {
       "id": "cv",
       "label": "CV",
-      "href": "/cv/Ampharaos-CV.pdf",
+      "href": "/cv/Fátima-Florez-CV.pdf",
       "icon": "/contact/pdfIcon.png",
       "newTab": true
     }

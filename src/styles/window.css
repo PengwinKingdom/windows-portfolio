@@ -78,3 +78,28 @@
 .window-body::-webkit-scrollbar-thumb:hover {
   background: #61a27d;
 }
+
+
+
+@media (max-width: 768px){
+  .window{
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    z-index: 99999;
+  }
+
+  .window-header{
+    height: 56px;
+  }
+
+  .window-content{
+    height: calc(100vh - 56px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

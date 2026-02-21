@@ -53,67 +53,80 @@ export default function Taskbar({
 
     return(
         <div className="taskbar">
-
-            <div className="taskbar-apps">
-                {openWindows.map((id)=>{
-                    const s=sectionsById.get(id);
-                    return(
-                        <button
-                        key={id}
-                        type="button"
-                        className={`taskbar-btn ${id === activeWindowId ? "active" : ""}`}
-                        onClick={()=>onFocus(id)}
-                        title={s?.title??id}
-                        >
-                            {s?.title ?? id}
-                        </button>
-                    );
-                })}
-            </div>
-
-            <div className="tray">
-                <div className="lang" ref={langRef}>
+            
+            <div className="taskbar-left">
+                <div className="taskbar-brand">
+                    <div className="taskbar-name">Fátima Florez</div>
+                    <div className="taskbar-role">Backend/Web (Python, FastAPI/Flask, React)</div>
+                    </div>
                     
-                    <button
-                    type="button"
-                    className="lang-btn"
-                    onClick={() => {
-                        playClick();
-                        setLangOpen((v) => !v)
-                    }}
-                    aria-haspopup="menu"
-                    aria-expanded={langOpen}>
-                        {lang?.toUpperCase?.() ?? "EN"} <span className="caret">▾</span>
-                    </button>
-
-                    {langOpen && (
-                        <div className="lang-menu" role="menu">
+                    <div className="taskbar-apps">
+                        {openWindows.map((id)=>{
+                            const s=sectionsById.get(id);
+                            return(
                             <button
+                            key={id}
                             type="button"
-                            className={`lang-item ${lang === "en" ? "selected" : ""}`}
-                            onClick={() => {
-                                chooseLang("en");
-                            }}
-                            role="menuitem">
-                                English (EN)
+                            className={`taskbar-btn ${id === activeWindowId ? "active" : ""}`}
+                            onClick={()=>onFocus(id)}
+                            title={s?.title??id}
+                            >
+                                {s?.title ?? id}
                             </button>
-                            
-                            <button
-                            type="button"
-                            className={`lang-item ${lang === "es" ? "selected" : ""}`}
-                            onClick={() => {
-                                chooseLang("es");
-                            }}
-                            role="menuitem">
-                                Español (ES)
-                            </button>
-                        </div>
-          )}
-                </div>
-                <img className="tray-img" src="/tray/wifi.png" alt="Wi-Fi" />
-                <img className="tray-img" src="/tray/volume.png" alt="Volume" />
-                <img className="tray-img" src="/tray/battery.png" alt="Battery" />
+                            );
+                            })}
+                    </div>
             </div>
+
+            <div className="taskbar-end">
+                <div className="tray">
+                    <div className="lang" ref={langRef}>
+                        
+                        <button
+                        type="button"
+                        className="lang-btn"
+                        onClick={() => {
+                            playClick();
+                            setLangOpen((v) => !v)
+                        }}
+                        
+                        aria-haspopup="menu"
+                        aria-expanded={langOpen}>
+                            {lang?.toUpperCase?.() ?? "EN"} <span className="caret">▾</span>
+                        </button>
+                        
+                        {langOpen && (
+                            <div className="lang-menu" role="menu">
+                                <button
+                                type="button"
+                                className={`lang-item ${lang === "en" ? "selected" : ""}`}
+                                onClick={() => {
+                                    chooseLang("en");
+                                }}
+                                
+                                role="menuitem">
+                                    English (EN)
+                                </button>
+                                
+                                <button
+                                type="button"
+                                className={`lang-item ${lang === "es" ? "selected" : ""}`}
+                                onClick={() => {
+                                    chooseLang("es");
+                                }}
+                                
+                                role="menuitem">
+                                    Español (ES)
+                                </button>
+                                </div>
+                            )}
+                            
+                            </div>
+                            <img className="tray-img" src="/tray/wifi.png" alt="Wi-Fi" />
+                            <img className="tray-img" src="/tray/volume.png" alt="Volume" />
+                            <img className="tray-img" src="/tray/battery.png" alt="Battery" />
+                            </div>
+                            </div>
 
             <div className="taskbar-right">
 

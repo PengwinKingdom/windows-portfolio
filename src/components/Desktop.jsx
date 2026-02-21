@@ -2,6 +2,7 @@ import DesktopIcon from "./DesktopIcon";
 import "../styles/desktop.css";
 
 export default function Desktop({sections,onOpen}){
+
     return (
         <div className="desktop">
             <div className="icons">

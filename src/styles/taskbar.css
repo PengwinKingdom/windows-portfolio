@@ -183,3 +183,35 @@
 .lang-item.selected {
   background: rgba(255,255,255,0.14);
 }
+
+.taskbar-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.taskbar-brand{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.taskbar-name{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.taskbar-role{
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.taskbar-end{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

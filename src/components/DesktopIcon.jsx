@@ -1,3 +1,5 @@
+import "../styles/desktopIcon.css";
+
 export default function DesktopIcon({ iconPath, label, onOpen }) {
   return (
     <button
@@ -5,6 +7,7 @@ export default function DesktopIcon({ iconPath, label, onOpen }) {
       onDoubleClick={onOpen}
       className="desktop-icon"
       title="Double click to open"
+      onClick={onOpen}
     >
       <img className="desktop-icon__img" src={iconPath} alt="" />
       <span className="desktop-icon__label">{label}</span>

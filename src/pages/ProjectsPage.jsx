@@ -37,11 +37,20 @@ export default function ProjectsPage({ lang }) {
               onClick={() => setSelectedId(p.id)}
               type="button">
               <div className="project-item-title">{p.title}</div>
-              <div className="project-item-tags">
+             
+             {/*  <div className="project-item-tags">
                 {active.tags.map((tag, i) => (
-    <span key={i} className="tag">{tag}</span>
-  ))}
+                  <span key={i} className="tag">{tag}</span>
+                ))}
               </div>
+              */}
+
+              <div className="project-item-tags">
+                {p.tags.map((tag, i) => (
+                  <span key={i} className="tag">{tag}</span>
+                ))}
+              </div>
+
             </button>
           ))}
         </div>

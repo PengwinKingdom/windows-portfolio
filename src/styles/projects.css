@@ -37,9 +37,9 @@
 }
 
 .project-item.active {
-  border-color:  #e64573;
-  background:  #fcbdd0;
-  border: 3px solid #e64573;
+  border-color:  #fb6690;
+  background:  #ffd1df;
+  border: 2px solid #e64573;
 }
 
 .project-item.active:hover {

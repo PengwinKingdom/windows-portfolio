@@ -7,6 +7,7 @@ import Window from "./components/Window";
 import Assistant from "./components/Assistant";
 import Taskbar from "./components/Taskbar";
 import "./styles/globals.css";
+import { useIsMobile } from "./hooks/useIsMobile";
 
 
 const getMainMenuAssistant = (hasGreeted, lang) => ({
@@ -65,6 +66,7 @@ const DEFAULT_POSITIONS = {
 };
 
 
+
 function App() {
 
   useEffect(() => {
@@ -86,12 +88,11 @@ function App() {
   const [positions,setPositions]=useState({});
   const [lang,setLang]=useState("en");
   const assistantFlow = useMemo(() => buildAssistantFlow(lang), [lang]);
-
+  const isMobile = useIsMobile(768);
 
   const getAssistantForSection = (sectionId, lang) => {
   const s = sectionsById.get(sectionId);
   const flow = assistantFlow[sectionId];
-
 
   const dialog =
     (s?.assistantDialogKey && t(lang, s.assistantDialogKey)) ||
@@ -228,9 +229,11 @@ const activeWindowId = openWindows.length
       })}
 
       <Assistant
+      lang={lang}
       message={assistant.message}
       actions={assistant.actions}
       onAction={handleAssistantAction}
+      hide={isMobile && openWindows.length > 0}
       />
 
       <Taskbar

@@ -1,6 +1,7 @@
 {
   "assistant": {
     "hello": "Hola :D\n\n¿Qué te gustaría explorar?",
+    "helloMobile": "Hola :D\n\n¿Qué te gustaría explorar?",
     "explore": "¿Qué te gustaría explorar?",
     "viewing": "Estás viendo {{section}}",
     "next": "Siguiente: {{section}}",
@@ -86,6 +87,21 @@
         ],
         "image": "/projects/MerketLink.png",
         "link": "https://github.com/PengwinKingdom/marketlink-backend.git"
+      },
+
+      {
+        "id": "habit-tracker-api",
+        "title": "Habit Tracker API",
+        "tags": ["Backend", "REST API", "FastAPI", "Swagger"],
+        "description": "Una API REST para registrar hábitos con logs y resúmenes semanales, construida con FastAPI y documentada con Swagger.",
+        "learned": [
+          "Diseño de endpoints REST y modelos de datos",
+          "Validación con esquemas (Pydantic)",
+          "Persistencia en base de datos y CRUD",
+    "Documentación de API con Swagger/OpenAPI"
+        ],
+        "image": "/projects/habit-tracker-docs.png",
+        "link": "https://github.com/PengwinKingdom/habit-tracker-api.git"
       }
     ]
   },
@@ -131,7 +147,7 @@
 
   "about": {
     "name": "Fátima Florez",
-    "intro": "¡Hola! Soy estudiante de Ingeniería de Software y actualmente estoy enfocada en el desarrollo web Frontend y Backend.\n\nMe gusta crear proyectos prácticos para entender mejor cómo funcionan las aplicaciones reales.\n\nLa mayoría de mi trabajo comenzó como proyectos académicos, pero actualmente busco desarrollar proyectos propios con una estructura más cercana a un entorno real para seguir aprendiendo.",
+    "intro": "¡Hola! Soy estudiante de Ingeniería de Software (UPC) y me enfoco en el desarrollo web Frontend y Backend.\n\nMe gusta construir proyectos prácticos, desde interfaces hasta APIs, para entender cómo funcionan las aplicaciones en un entorno real.\n\nGran parte de mi experiencia comenzó con proyectos académicos, y hoy sigo creando proyectos propios para mejorar mi estructura de código, buenas prácticas y forma de trabajar.",
     "education": {
     "title": "Educación",
     "degree": "Ingeniería de Software",
@@ -227,7 +243,7 @@
     },
     {
       "id": "gmail",
-      "label": "Gmail",
+      "label": "Email",
       "href": "mailto:fatimabelenflorez@gmail.com",
       "icon": "/contact/email.png",
       "newTab": false
@@ -235,8 +251,8 @@
     {
       "id": "cv",
       "label": "CV",
-      "href": "/cv/Ampharaos-CV.pdf",
-      "icon": "/contact/pngIcon.png",
+      "href": "/cv/Fátima-Florez-CV.pdf",
+      "icon": "/contact/pdfIcon.png",
       "newTab": true
     }
   ]

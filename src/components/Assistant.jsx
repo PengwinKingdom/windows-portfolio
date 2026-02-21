@@ -1,9 +1,20 @@
 import { useEffect, useMemo, useState } from "react";
 import "../styles/assistant.css";
+import { t } from "../i18n";
+import { useIsMobile } from "../hooks/useIsMobile";
 
-export default function Assistant({ message, actions, onAction }) {
+export default function Assistant({ lang = "en", actions = [], onAction, hide = false }) {
 
     const [activeIndex,setActiveIndex]=useState(0);
+    const isMobile = useIsMobile(768);
+
+    const finalMessage = useMemo(() => {
+      return isMobile
+      ? t(lang, "assistant.explore")
+      : t(lang, "assistant.hello");
+    }, [isMobile, lang]);
+
+    //if (hide) return null;
 
     //Reset active index when actions change
     useEffect(()=>{
@@ -45,10 +56,11 @@ export default function Assistant({ message, actions, onAction }) {
 
 
   return (
-    <div className="assistant">
+    <div className="assistant" style={{ display: hide ? "none" : "block" }}>
       <div className="assistant-bubble">
-        <div className="msg">{message}</div>
-
+        <div className="msg">{finalMessage}</div>
+        
+        {!isMobile && (
         <ul className="assistant-menu" role="menu" aria-label="Assistant menu">
           {actions.map((a, idx) => (
             <li key={a.id} role="none">
@@ -68,10 +80,13 @@ export default function Assistant({ message, actions, onAction }) {
             </li>
           ))}
         </ul>
+        )}
 
-        <div className="assistant-hint">
-          Use ↑ ↓ and Enter
-        </div>
+        {!isMobile && (
+          <div className="assistant-hint">
+            Use ↑ ↓ and Enter
+          </div>
+        )}
       </div>
 
       <img
