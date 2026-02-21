@@ -226,6 +226,10 @@
   gap: 10px;
 }
 
+.taskbar-role-short{
+  display: none;
+}
+
 @media (max-width: 768px){
   .taskbar-role{
     display: none; 
