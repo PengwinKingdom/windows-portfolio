@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { playClick } from "../sfx";
 import "../styles/taskbar.css";
+import {useIsMobile} from "../hooks/useIsMobile";
 
 export default function Taskbar({
     openWindows,
@@ -25,6 +26,7 @@ export default function Taskbar({
 
     const [langOpen,setLangOpen]=useState(false);
     const langRef = useRef(null);
+    const isMobile = useIsMobile(768);
 
     useEffect(()=>{
         const onDocPointerDown=(e)=>{
@@ -58,8 +60,10 @@ export default function Taskbar({
                 <div className="taskbar-brand">
                     <div className="taskbar-name">Fátima Florez</div>
                     <div className="taskbar-role">Backend/Web (Python, FastAPI/Flask, React)</div>
+                    <div className="taskbar-role-short">Backend/Web</div>
                     </div>
                     
+                    {!isMobile && (
                     <div className="taskbar-apps">
                         {openWindows.map((id)=>{
                             const s=sectionsById.get(id);
@@ -76,6 +80,7 @@ export default function Taskbar({
                             );
                             })}
                     </div>
+                    )}
             </div>
 
             <div className="taskbar-end">
